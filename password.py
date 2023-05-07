@@ -8,17 +8,15 @@
 password = 'a123456'
 i = 3 #剩餘機會
 while i > 0:
+    i = i - 1
     psd = input('請輸入密碼') #不要再用password，已經被指定為正確密碼了
     if psd == password:
 	    print('登入成功!')
 	    break #逃出迴圈 
     else:
-	    i = i - 1
+
 	    print('密碼錯誤! 還有',i , '次機會')
-
-	       
-
-
+   
 
 #如何重複要人輸入密碼？
 #要怎表達這是第幾次輸入錯誤，還剩幾次機會？
